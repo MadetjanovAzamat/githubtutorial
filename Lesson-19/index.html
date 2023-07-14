@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: "0px",
+                    md: "425px",
+                    lg: "728px",
+                    xl: "1024px"
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-200">
+    <header class="py-8 px-[10%] bg-indigo-500 shadow-lg flex justify-between items-center">
+        <h1 class="text-5xl text-white drop-shadow-md">LOGO</h1>
+        <ul class=" gap-8 hidden lg:flex">
+            <li>
+                <a class="text-3xl text-white drop-shadow-md transition duration-300 hover:text-yellow-500" href="#">Home</a>
+            </li>
+            <li>
+                <a class="text-3xl text-white drop-shadow-md transition duration-300 hover:text-yellow-500" href="#">About</a>
+            </li>
+            <li>
+                <a class="text-3xl text-white drop-shadow-md transition duration-300 hover:text-yellow-500" href="#">Services</a>
+            </li>
+        </ul>
+        <i class='bx bx-menu-alt-right text-5xl text-white md:block lg:hidden'></i>
+    </header>
+
+    <!-- cards -->
+    <div class="w-[80%] mx-auto my-[100px] grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+        <div class="bg-white shadow-mg rounded-md p-6">
+            <img class="rounded-mg shadow-mg" width="500" height="500" src="https://picsum.photos/500" alt="">
+            <div class="pt-4">
+                <h2 class="text-3xl text-sale-700 font-medium">Lorem, ipsum dolor.</h2>
+            </div>
+        </div>
+
+        <div class="bg-white shadow-mg rounded-md p-6">
+            <img class="rounded-mg shadow-mg" width="500" height="500" src="https://picsum.photos/501" alt="">
+            <div class="pt-4">
+                <h2 class="text-3xl text-sale-700 font-medium">Lorem, ipsum dolor.</h2>
+            </div>
+        </div>
+
+        <div class="bg-white shadow-mg rounded-md p-6">
+            <img class="rounded-mg shadow-mg" width="500" height="500" src="https://picsum.photos/502" alt="">
+            <div class="pt-4">
+                <h2 class="text-3xl text-sale-700 font-medium">Lorem, ipsum dolor.</h2>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

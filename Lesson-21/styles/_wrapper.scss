@@ -1,0 +1,114 @@
+@import "variables";
+
+li,a,img {
+    transition: 0.3s ease;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: $lightBg;
+    display: grid;
+
+    grid-template-columns: 105px 1fr 410px;
+    position: relative;
+
+    .navigation {
+        background-color: $dargBg;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        left: 0;
+
+        .logo {
+            padding: 24px 24px 26px 24px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+
+            li {
+                padding: 13px 24px 13px 12px;
+                margin-left: 12px;
+                border-radius: 12px 0 0 12px;
+                position: relative;
+
+                a{
+                    padding: 18px;
+                    display: block;
+                }
+
+                &:active {
+                    background-color: $lightBg;
+
+                    &::after {
+                        content: "";
+                        background-color: $lightBg;
+                        width: 24px;
+                        height: 24px;
+                        position: absolute;
+                        right: 0;
+                        top: -24px;
+                    }
+
+                    &::before {
+                        content: "";
+                        background-color: $lightBg;
+                        width: 24px;
+                        height: 24px;
+                        position: absolute;
+                        right: 0;
+                        top: -24px;
+                        z-index: 99;
+                        border-bottom-right-radius: 50%;
+                    }
+
+                    a {
+                        background-color: $primaryColor;
+                        border-radius: 8px;
+
+                        img {
+                            filter: brightness(0) invert(1);
+                        }
+                        &::after {
+                            content: "";
+                            background-color: $lightBg;
+                            width: 24px;
+                            height: 24px;
+                            position: absolute;
+                            right: 0;
+                            bottom: -24px;
+                        }
+    
+                        &::before {
+                            content: "";
+                            background-color: $lightBg;
+                            width: 24px;
+                            height: 24px;
+                            position: absolute;
+                            right: 0;
+                            bottom: -24px;
+                            z-index: 99;
+                            border-top-right-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sidebar {
+        background-color: $dargBg;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        right: 0;
+    }
+}

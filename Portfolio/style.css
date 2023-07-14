@@ -1,0 +1,58 @@
+body {
+    margin: 0px;
+    background-color:burlywood;
+    color: white;
+    border: 5px double darkcyan;
+    border-radius:30px
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: rgb(186, 184, 113);
+    margin: 0 500px;
+}
+
+h2 {
+    color:blue;
+}
+
+/* .headder {
+    display: flex;
+} */
+
+div {
+    background-color:black;
+    margin: 15px;
+}
+
+.footer {
+    margin: 0 200px;
+}
+
+.A {
+    text-align: center;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin: 0 160px;
+}
+
+textarea{
+    margin: 0 10px;
+    width: 400px;
+}
+
+input {
+    margin: 0 10px; 
+    width: 400px; 
+    height: 20px;
+}
+
+table {
+    text-align: left;
+}

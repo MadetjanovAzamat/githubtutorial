@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* mixin & include */
+.btn-primary {
+  padding: 10px 25px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 50px 0;
+  background-color: #3388ff;
+  color: #fff;
+}
+
+.header {
+  width: 100%;
+  padding: 15px 0;
+  background-color: #3388ff;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .container .logo {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+}
+.header .container ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+.header .container ul li a {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: 0.3s ease;
+  border-radius: 6px;
+}
+.header .container ul li a:hover {
+  background-color: #fff;
+  color: #444;
+}
+
+/* extend */
+.flex, .home-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-row {
+  flex-wrap: wrap;
+}
+.home-row .item {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+}
+
+/* mixin & include */
+.btn-primary {
+  padding: 10px 25px;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 50px 0;
+  background-color: #3388ff;
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */

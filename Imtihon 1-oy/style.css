@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn {
+    padding: 11px 22px;
+    font-size: 20px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #0077C0;
+    border-radius: 10px;
+    font-size: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.container {
+    width: 80%;
+    height: auto;
+}
+
+.home .container .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home .container .header .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.home .container .header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.home .container .header ul li{
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+}
+
+.home .container .header ul li a{
+    color: #000000;
+    font-weight: 600;
+}
+
+.home .container .header .row  {
+    margin-left: 300px;
+}
+
+.home .container .header .row h1 {
+    width: 100px;
+    height: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
+}
+
+
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:150px;
+    margin-left: 300px;
+}
+
+.main .main-text h1 {
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.main .main-text p {
+    width: 450px;
+    height: 72px;
+    font-weight: 900;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.main .main-text button {
+    margin-top: 20px;
+}
+
+.main-img {
+    position: relative;
+}
+
+.main .main-img .img1 {
+    position: absolute;
+    margin-left: -500px;
+    margin-top: -200px;
+}
+
+.main .main-img .img2 {
+    position: absolute;
+    margin-left: -400px;
+    margin-top: -293px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    margin-top: 300px;
+    margin-left: 300px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1370px) {
+    
+}

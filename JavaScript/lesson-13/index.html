@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson13</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: "0px",
+                    md: "728px",
+                    sm: "1024px"
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-indigo-200 flex items-center justify-center min-h-screen">
+
+    <div class=" sm:w-full sm:h-screen lg:w-[60%] bg-white p-6 rounded-md shadow-md lg:h-[60vh] overflow-y-auto relative">
+        <form id="form" class="w-full p-4 bg-slate-200 rounded-md flex sticky top-0">
+            <input id="task-input" class="w-full bg-transparent px-4 py-2 border-none outline-none text-slate-600 text-2xl" type="text" placeholder="Enter any tasks..." required>
+            <button class="bg-indigo-500 tex-white px-8 py-4 rounded-md">Save</button>
+        </form>
+
+        <div  class="h-full w-full rounded-md my-4">
+            <ul id="content">
+
+            </ul>
+        </div>
+    
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>

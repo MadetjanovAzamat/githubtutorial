@@ -1,0 +1,30 @@
+$primaryColor: #3388ff;
+$secondaryColor:#ff0088;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+        /* mixin & include */
+
+        @mixin btn {
+            padding: 10px 25px;
+            border-radius: 7px;
+            border: none;outline: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            @include btn;
+            margin: 50px 0;
+            background-color: $primaryColor;
+            color: #fff;
+        }

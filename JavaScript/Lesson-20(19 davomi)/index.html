@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Food</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm:"0px",
+                    md:"728px",
+                    lg:"1024px"
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <div class="w-full h-screen flex relative">
+        <aside class="sm:absolute sm:w-full sm:-left-[150%] md:min-w-[320px] md:max-w-[320px] min-w-[320px] h-screen top-0 md:sticky left-0 bg-slate-800 shadow-lg rounded-r-lg overflow-y-auto sidebar" id="sidebar">
+            <h1 class="text-center my-[30px] text-white text-4xl">
+                <span class="text-red-500 font-extrabold">THE</span> MEALS
+            </h1>
+
+            <ul id="categories-content" class="px-6 w-full">
+                <!-- all categories -->
+
+            </ul>
+        </aside>
+
+        <main class="p-8 h-screen overflow-y-auto w-full">
+            <div class="flex justify-between items-center">
+                <h1 id="categoryName" class="text-2xl font-semibold text-slate-700">Loading...</h1>
+                <button class="sm:block md:hidden" id="toggler">
+                    <i class="bx bx-menu-alt-right bx-md"></i>
+                </button>
+            </div>
+
+                <input class="px-4 py-2 my-4 border w-full" placeholder="Enter your favourite meal name..." id="search" />
+
+            <div id="meals-content" class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-6 gap-4 w-full">
+                <!-- all meals -->
+            </div>
+
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

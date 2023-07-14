@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:ital,wght@0,200;0,400;0,500&display=swap');
+
+:root{
+    --primaryColor:#ff5622;
+    --containerWidth:80%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat' sans-serif;
+}
+
+/* global style */
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: var(--containerWidth);
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    padding: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #444;
+}
+
+header .container h1 span {
+    color: var(--primaryColor);
+}
+
+header .container ul {
+    display: flex;
+    gap: 30px;
+}
+
+header.container ul li a {
+    font-size: 24px;
+    font-weight: 500;
+    color: #444;
+    transition: color 0.3s ease;
+}
+
+header .containerul li a:hover {
+    color: var(--primaryColor);
+}
+
+/* home */
+.home {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.home video {
+    width: 100%;
+    top: 0;
+    position: absolute;
+    min-height: 100vh;
+    object-fit: cover;
+}
+
+.home h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10vh;
+    color: #fff;
+    text-align: center;
+}
+
+.home h1 span {
+    color: var(--primaryColor);
+}
+
+.menu-toggler {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    color:#444;
+    display: none;
+}
+
+
+@media screen and (max-width: 1024px){
+    .home h1{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    menu-toggler{
+        display: block;
+    }
+
+    header .container ul {
+        display: none;
+    }
+
+    .home h1{
+        font-size: 40px;
+    }
+}
+

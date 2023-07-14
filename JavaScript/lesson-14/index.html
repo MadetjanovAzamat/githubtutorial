@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson14</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="bg-blue-100 w-full h-screen overflow-hidden">
+        <div class="container h-[80vh] w-[70%] bg-white rounded-mg shadow-md mx-auto my-[10vh] p-[2rem] flex items-stretch">
+            <div class="menu">
+                <ul>
+                    <li id="menu_item" data-car="mers" class="active">Mers</li>
+                    <li id="menu_item" data-car="bmw">BMW</li>
+                    <li id="menu_item" data-car="ferrari">Ferrari</li>
+                    <li id="menu_item" data-car="tayota">Tayota</li>
+                    <li id="menu_item" data-car="lambo">Lambo</li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <img class="active" data-car="mers" src="https://www.major-auto.ru/images/models/mercedes/maybach%202022/29450/29450_medium.jpg" alt="">
+                <img data-car="bmw" src="https://www.bmw.uz/content/dam/bmw/common/all-models/3-series/sedan/2022/navigation/bmw-3-series-sedan-lci-modelfinder.png" alt="">
+                <img data-car="ferrari" src="https://cdn.wallpapersafari.com/84/8/w4fj0T.png" alt="">
+                <img data-car="tayota" src="https://imgd.aeplcdn.com/0x0/n/cw/ec/139739/land-cruiser-exterior-right-front-three-quarter.jpeg?isig=0" alt="">
+                <img data-car="lambo" src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/homepage/families-gallery/2023/revuelto/revuelto_m.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>

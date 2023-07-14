@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color:#fff;
+    overflow: hidden;
+    position: relative;
+}
+.mountains {
+    display: flex;
+}
+
+.mountain1{
+    width: 800px;
+    height: 800px;
+    background-color: dodgerblue;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 40px;
+    bottom: -73%;
+    z-index: 999;
+}
+
+.mountain2{
+    width: 800px;
+    height: 800px;
+    background-color: dodgerblue;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 40px;
+    bottom: -73%;
+    z-index: 999;
+}
+
+.mountain3 {
+    position: absolute; 
+    width: 500px;
+    height: 500px;
+    background-color: dodgerblue;
+    position: absolute;
+    left: 525px;
+    transform: rotate(45deg);
+    bottom: -40%;
+    z-index: 999;
+    }
+
+    .sun {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        margin-left: 750px;
+        border-radius: 50%;
+        margin-top: 390px;
+        background-color: #fff;
+        z-index: 1;
+        animation-name: sun;
+        animation-duration: 30s;
+        animation-iteration-count:infinite;
+    }
+
+
+    .cloudA {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        animation-name: cloudA;
+        animation-duration: 40s;
+        animation-iteration-count: infinite;
+        z-index: 100;
+    }
+
+    .cloudA .cloud1 {
+        width: 300px;
+        height: 100px;
+        position: absolute;
+        background-color: #ddd;
+        border-radius: 100px;
+        bottom: -50px;
+    }
+
+    .cloudA .cloud2 {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        left: 20px;
+        bottom: -50px;
+        background-color: #ddd;
+        position: absolute;
+    }
+
+    .cloudA .cloud3 {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        left: 120px;
+        bottom: -30px;
+        background-color: #ddd;
+        position: absolute;
+    }
+
+    .cloudB {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        animation-name: cloudA;
+        animation-duration: 60s;
+        animation-iteration-count: infinite;
+        z-index: 100;
+    }
+
+    .cloudB .cloud1 {
+        width: 200px;
+        height: 90px;
+        position: absolute;
+        background-color: #ddd;
+        border-radius: 100px;
+        bottom: -30px;
+    }
+
+    .cloudB .cloud2 {
+        width: 100px;
+        height: 110px;
+        border-radius: 50%;
+        left: 20px;
+        bottom: 0px;
+        background-color: #ddd;
+        position: absolute;
+    }
+
+    .cloudB .cloud3 {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        left: 100px;
+        bottom: 20px;
+        background-color: #ddd;
+        position: absolute;
+    }
+
+    .cloudC {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        animation-name: cloudA;
+        animation-duration: 50s;
+        animation-iteration-count: infinite;
+        z-index: 100;
+    }
+
+    .cloudC .cloud1 {
+        width: 300px;
+        height: 100px;
+        position: absolute;
+        background-color: #ddd;
+        border-radius: 100px;
+        bottom: -50px;
+    }
+
+    .cloudC .cloud2 {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        left: 20px;
+        bottom: -50px;
+        background-color: #ddd;
+        position: absolute;
+    }
+
+    .cloudC .cloud3 {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        left: 120px;
+        bottom: -30px;
+        background-color: #ddd;
+        position: absolute;
+    } 
+
+    .cloudD {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        animation-name: cloudA;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        z-index: 100;
+    }
+
+    .cloudD .cloud1 {
+        width: 200px;
+        height: 90px;
+        position: absolute;
+        background-color: #ddd;
+        left: 1450px;
+        border-radius: 100px;
+        bottom: -30px;
+    }
+
+    .cloudD .cloud2 {
+        width: 100px;
+        height: 110px;
+        border-radius: 50%;
+        left: 1470px;
+        bottom: 0px;
+        background-color: #ddd;
+        position: absolute;
+    }
+
+    .cloudD .cloud3 {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        left: 1550px;
+        bottom: 20px;
+        background-color: #ddd;
+        position: absolute;
+    }
+
+    @keyframes sun {
+        0% {
+            transform: translateY(8px);
+            background-color:#fff;
+        }
+        3% {
+            background-color: orange;
+            transform: translateY(8px);
+        }
+        20%{
+            background-color: yellow;
+        }
+        50% {
+            transform: translateY(-600px);
+            background-color: yellow;
+        }
+        80%{
+            background-color: yellow;
+        }
+        90% {
+            background-color: darkorange;
+            transform: translateY(8px);
+        }
+        100% {
+            transform: translateY(8px);
+            background-color:#fff;
+        }
+    }
+
+    @keyframes cloudA {
+        0% {
+            transform: translateX(-400px);
+        }
+        50% {
+            transform: translateX(1500px);
+        }
+        100%{
+            transform: translateX(-400px);
+        }
+    }
+
+    @keyframes cloudB {
+        0% {
+            transform: translateX(-400px);
+        }
+        50% {
+            transform: translateX(1500px);
+        }
+        100%{
+            transform: translateX(-400px);
+        }
+    }
+
+    @keyframes cloudC {
+        0% {
+            transform: translateX(-500px);
+        }
+        50% {
+            transform: translateX(1500px);
+        }
+        100%{
+            transform: translateX(-500px);
+        }
+    }
+
+    @keyframes cloudD {
+        0% {
+            transform: translateX(1500px);
+        }
+        50% {
+            transform: translateX(-400px);
+        }
+        100%{
+            transform: translateX(1500px);
+        }
+    }

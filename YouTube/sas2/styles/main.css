@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100%;
+  height: 109vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(./1.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.main .navbar {
+  width: 1200px;
+  height: 75px;
+  margin: auto;
+}
+.main .navbar .icon {
+  width: 200px;
+  float: left;
+  height: 70px;
+}
+.main .navbar .icon .logo {
+  color: #ff7200;
+  font-size: 35px;
+  font-family: Arial;
+  padding-left: 20px;
+  float: left;
+  padding-top: 10px;
+}
+.main .navbar .menu {
+  width: 400px;
+  float: left;
+  height: 70px;
+}
+.main .navbar .menu ul {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .navbar .menu ul li {
+  list-style: none;
+  margin-left: 62px;
+  margin-top: 27px;
+  font-size: 14px;
+}
+.main .navbar .menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.4s ease;
+}
+.main .navbar .menu ul li a:hover {
+  color: #ff7200;
+}
+.main .navbar .search {
+  width: 330px;
+  float: left;
+  margin-left: 270px;
+}
+.main .navbar .search .srch {
+  font-family: "Times New Roman";
+  width: 200px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #ff7200;
+  margin-top: 13px;
+  color: #fff;
+  border-right: none;
+  font-size: 16px;
+  float: left;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.main .navbar .search .srch:focus {
+  outline: none;
+}
+.main .navbar .search .btn {
+  width: 100px;
+  height: 40px;
+  background: #ff7200;
+  border: 2px solid #ff7200;
+  margin-top: 13px;
+  color: #fff;
+  font-size: 15px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.main .navbar .search .btn:focus {
+  outline: none;
+}
+.main .content {
+  width: 1200px;
+  height: auto;
+  margin: auto;
+  color: #fff;
+  position: relative;
+}
+.main .content .par {
+  padding-left: 20px;
+  padding-bottom: 25px;
+  font-family: Arial;
+  letter-spacing: 1.2px;
+  line-height: 30px;
+}
+.main .content .content h1 {
+  font-family: "Times New Roman";
+  font-size: 50px;
+  padding-left: 20px;
+  margin-top: 9%;
+  letter-spacing: 2px;
+}
+.main .content .cn {
+  width: 160px;
+  height: 40px;
+  background: #ff7200;
+  border: none;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.main .content .cn a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease;
+}
+.main .content .cn:hover {
+  background-color: #fff;
+}
+.main .content .content span {
+  color: #ff7200;
+  font-size: 60px;
+}
+.main .content .form {
+  width: 250px;
+  height: 380px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%);
+  position: absolute;
+  top: -20px;
+  left: 870px;
+  border-radius: 10px;
+  padding: 25px;
+}
+.main .content .form h2 {
+  width: 220px;
+  font-family: sans-serif;
+  text-align: center;
+  color: #ff7200;
+  font-size: 22px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 8px;
+}
+.main .content .form .form input {
+  width: 240px;
+  height: 35px;
+  background: transparent;
+  border-bottom: 1px solid #ff7200;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  font-family: sans-serif;
+}
+.main .content .form .form input:focus {
+  outline: none;
+}
+.main .content .form .form input ::-moz-placeholder {
+  color: #fff;
+  font-family: Arial;
+}
+.main .content .form .form input ::placeholder {
+  color: #fff;
+  font-family: Arial;
+}
+.main .content .form .btnn {
+  width: 240px;
+  height: 40px;
+  background: #ff7200;
+  border: none;
+  margin-top: 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.4s ease;
+}
+.main .content .form .btnn:hover {
+  background: #fff;
+  color: #ff7200;
+}
+.main .content .form .btnn a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.main .content .form .link a {
+  text-decoration: none;
+  color: #ff7200;
+}
+.main .content .form .liw {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.main .content .form .icons a {
+  text-decoration: none;
+  color: #fff;
+}
+.main .content .form .icons ion-icon {
+  color: #fff;
+  font-size: 30px;
+  padding-left: 14px;
+  padding-top: 5px;
+  transition: 0.3s ease;
+}
+.main .content .form .icons ion-icon:hover {
+  color: #ff7200;
+}/*# sourceMappingURL=main.css.map */

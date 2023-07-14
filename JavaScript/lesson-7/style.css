@@ -1,0 +1,16 @@
+.btn {
+    background-color: coral;
+    border-radius: 10px;
+    padding: 10px 25px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.btn-primary {
+    background-color: cyan;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.22);
+}

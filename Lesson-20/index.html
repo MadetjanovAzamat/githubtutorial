@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+</head>
+<body>
+    <!-- home page start -->
+    <section class="min-h-screen w-full" id="home">
+        <header class="my-[27px] mx-[22px] md:mx-[60px] flex justify-end">
+            <ul class="flex gap-[33px] items-center hidden md:flex">
+                <li><a class="font-[500] text-[20px] text-textColor transition duration-200 hover:text-secondaryColor" href="#">Works</a></li>
+                <li><a class="font-[500] text-[20px] text-textColor transition duration-200 hover:text-secondaryColor" href="#">Blog</a></li>
+                <li><a class="font-[500] text-[20px] text-textColor transition duration-200 hover:text-secondaryColor" href="#">Contact</a></li>
+            </ul>
+
+            <img class="md:hidden" src="./img/menu.svg" alt="">
+        </header>
+
+        <!-- home content start -->
+        <div class="w-[100%] px-[2rem] lg:px-0 lg:w-[80%] max-w-[1600px] mt-[45px] md:mt-[140px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center reverse justify-center gap-y-[43px] py-[12px]">
+            <div class="flex flex-col gap-[40px] order-last md:order-first text-center md:text-start justify-center md:justify-start">
+                <h1 class="text-textColor font-[700] text-[44px]">Hi, I am John, <br />
+                    Creative Technologist</h1>
+                <p class="text-[16px] font-[400] text-textColor">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <div>
+                    <a class="py-[14px] px-[20px] rounded-sm bg-primaryColor text-white font-[500] text-[20px] transition duration-300 border-2 border-transparent hover:bg-transparent hover:text-textColor hover:border-primaryColor" href="#">Download Resume</a>
+                </div>
+            </div>
+            <div class="flex items-center justify-center">
+                <img width="243px" height="243px" src="./img/Ellipse 1.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- home page end -->
+
+    <!-- services page start -->
+    <section class="bg-lightBg w-full h-screen py-[35px]">
+
+        <!-- container -->
+        <div class="w-[95%] md:w-[80%] mx-auto max-w-[1600px]">
+
+            <!-- services head start -->
+            <div class="flex justify-between items-center">
+                <h2 class="text-2xl font-normal">Recent posts</h2>
+                <a class="text-secondaryColor">View all</a>
+            </div>
+            <!-- services head end -->
+
+            <!-- services row -->
+            <div class='flex flex-col md:flex-row justify-center items-center gap-5 my-[50px]'>
+
+                <!-- services row items-->
+                <div class='bg-white p-6 rounded-md'> 
+                    <h2 class='text-textColor text-2xl font-bold mb-[20px]'>Making a design system from scratch</h2> 
+                    <span class='flex items-start justify-between text-xl mb-[20px] w-[80%] gap-x-4'> 
+                        <p>12 Feb 2020</p> 
+                        <p>|</p> 
+                        <p>Design, Pattern</p> 
+                    </span> 
+                    <div class='max-w-[500px] text-xl'> 
+                        <p> 
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. 
+                        </p> 
+                    </div> 
+                </div> 
+
+                <div class='bg-white p-6 rounded-md'> 
+                    <h2 class='text-textColor text-2xl font-bold mb-[20px]'> 
+                        Creating pixel perfect icons in Figma</h2> 
+                    <span class='flex items-start w-[80%] justify-between text-xl mb-[20px]'> 
+                        <p>12 Feb 2020</p> 
+                        <p>|</p> 
+                        <p>Figma, Icon Design</p> 
+                    </span> 
+                    <div class='max-w-[500px] text-xl'> 
+                        <p> 
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. 
+                        </p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services page end -->
+
+    <!-- works page start -->
+    <section class="min-h-screen w-full">
+
+        <!-- works page head -->
+        <div class="w-[95%] md:w-[80%] mx-auto py-[35px] mb-[20px]">
+            <h2 class="font-[400] text-[22px] ">Featured works</h2>
+
+            <!-- works page content -->
+            <div class="flex flex-col gap-2">
+
+                <!-- single post item -->
+                <div class="py-[20px] flex gap-[20px] items-start border-b border-borderColor">
+                    <img height="150" class="w-full md:w-[30%] rounded-md shadow-md" src="https://picsum.photos/250/200">
+
+                    <div class="w-full md:w-[70%]">
+                        <h1 class="font-[700] text-[30px] text-textColor">Designing Dashboards</h1>
+
+                        <div class="flex my-[20px] gap-[25px] items-center">
+                            <span class="py-[5px] px-4 rounded-full bg-darkBg text-white text-[18px] font-[700]">2020</span>
+                            <span class="text-lightTextColor text-[20px]">Dashboard</span>
+                        </div>
+
+                        <p class="text-textColor font-[400] text-[16px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                </div>
+
+                <!-- single post item2 -->
+                <div class="py-[20px] flex gap-[20px] items-start border-b border-borderColor">
+                    <img height="150" class="w-full md:w-[30%] rounded-md shadow-md" src="https://picsum.photos/250/200">
+
+                    <div class="w-full md:w-[70%]">
+                        <h1 class="font-[700] text-[30px] text-textColor">Vibrant Portraits of 2020</h1>
+
+                        <div class="flex my-[20px] gap-[25px] items-center">
+                            <span class="py-[5px] px-4 rounded-full bg-darkBg text-white text-[18px] font-[700]">2018</span>
+                            <span class="text-lightTextColor text-[20px]">Illustration</span>
+                        </div>
+
+                        <p class="text-textColor font-[400] text-[16px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                </div>
+
+                <!-- single post item3 -->
+                <div class="py-[20px] flex gap-[20px] items-start border-b border-borderColor">
+                    <img height="150" class="w-full md:w-[30%] rounded-md shadow-md" src="https://picsum.photos/250/200">
+
+                    <div class="w-full md:w-[70%]">
+                        <h1 class="font-[700] text-[30px] text-textColor">36 Days of Malayalam type</h1>
+
+                        <div class="flex my-[20px] gap-[25px] items-center">
+                            <span class="py-[5px] px-4 rounded-full bg-darkBg text-white text-[18px] font-[700]">2018</span>
+                            <span class="text-lightTextColor text-[20px]">Typography</span>
+                        </div>
+
+                        <p class="text-textColor font-[400] text-[16px]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="min-h-screen w-full">
+        <div class="w-[80%] mx-auto my-[100px]">
+            <div class="flex items-center justify-center gap-[35px]">
+                <img src="./img/fb.svg">
+                <img src="./img/insta.svg">
+                <img src="./img/Group.svg">
+                <img src="./img/Linkedin.svg">
+            </div>
+            <p class="text-center font-[400] text-[14px] mx-auto mt-[30px]">Copyright ©2020 All rights reserved</p>
+
+        </div>
+    </section>
+</body>
+</html>

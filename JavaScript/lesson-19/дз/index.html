@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Food</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm:"0px",
+                    md:"728px",
+                    lg:"1024px"
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <div class="w-full h-screen flex relative">
+        <aside class="min-w-[320px] h-screen top-0 sticky left-0 bg-slate-800 shadow-lg rounded-r-lg overflow-y-auto">
+            <h1 class="text-center my-[30px] text-white text-4xl">
+                <span class="text-red-500 font-extrabold">THE</span> MEALS
+            </h1>
+
+            <ul id="categories-content" class="px-6 w-full">
+                <!-- all categories -->
+
+            </ul>
+        </aside>
+
+        <main class="p-8 h-screen overflow-y-auto">
+            <div class="flex items-center gap-[300px]">
+                <h1 id="categoryName" class="text-2xl font-semibold text-slate-700">Loading...</h1>
+                <div class="w-[50%] bg-slate-100 rounded-md shadow-sm flex items-center border">
+                    <i class="bx bx-search  text-3xl mx-1 text-gray-900"></i>
+                    <input id="input" class="px-4 py-2 bg-transparent border-none outline-none w-full text-2xl text-gray-900 font-light" type="text" placeholder="Search...">
+                </div>
+            </div>
+
+            <div id="meals-content" class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-6 gap-4 w-full">
+                <!-- all meals -->
+            </div>
+
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

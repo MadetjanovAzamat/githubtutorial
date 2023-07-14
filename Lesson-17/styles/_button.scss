@@ -1,0 +1,35 @@
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    transition: 0.3 ease;
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.btn-success {
+    background-color: #82B440;
+
+    &:hover {
+        background-color: darken(#82B440,5);
+    }
+}
+
+.btn-primary {
+    background-color: $primaryColor;
+    color: #fff;
+
+    &:hover {
+        background-color: darken($primaryColor, 5);
+    }
+}
+
+.btn-xl {
+    padding: 13px 42px !important;
+}

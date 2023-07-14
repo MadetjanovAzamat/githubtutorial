@@ -1,0 +1,19 @@
+@import 'globals';
+@import 'header';
+@import 'home';
+
+        /* mixin & include */
+
+@mixin btn {
+    padding: 10px 25px;
+    border-radius: 7px;
+    border: none;outline: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    @include btn;
+    margin: 50px 0;
+    background-color: $primaryColor;
+    color: #fff;
+}
